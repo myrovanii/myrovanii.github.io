@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>RISING FORCE MMORPG</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <style>
+        * { -webkit-tap-highlight-color: transparent; }
+    </style>
+</head>
+<body>
+    <!-- Экран загрузки -->
+    <div id="loading-screen" class="screen active">
+        <div class="loading-bg"></div>
+        <div class="loading-bar">
+            <div class="progress"></div>
+            <div class="percentage">0%</div>
+        </div>
+    </div>
+
+    <!-- Экран выбора персонажа -->
+    <div id="character-screen" class="screen">
+        <div class="race-select">
+            <div class="race-buttons">
+                <button class="race-btn active" data-race="1">Акреты</button>
+                <button class="race-btn" data-race="2">Белатто</button>
+                <button class="race-btn" data-race="3">Кориты</button>
+            </div>
+            <div class="class-grid"></div>
+        </div>
+        <button id="confirm-btn" disabled>Выбрать</button>
+    </div>
+
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script src="./js/game.js"></script>
+</body>
+</html>
